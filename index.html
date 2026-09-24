@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinderella | Dub Collection</title>
+    <meta
+      name="description"
+      content="Cinderella (1950) dub collection with multilingual MP4 downloads and video player."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="movie-header">
+        <p class="eyebrow">Dub Collection</p>
+        <h1 id="movie-title">Cinderella</h1>
+        <p id="movie-summary" class="movie-summary">Animated Feature • 1950 • Walt Disney Productions</p>
+      </header>
+
+      <section class="player-panel">
+        <video id="video-player" controls playsinline preload="metadata">
+          <source id="video-source" src="" type="video/mp4" />
+          Your browser does not support the HTML5 video tag.
+        </video>
+
+        <div class="controls">
+          <label for="language-selector">Available Languages</label>
+          <select id="language-selector" aria-label="Select language"></select>
+
+          <div class="actions">
+            <a id="download-link" class="button primary" href="#" target="_blank" rel="noreferrer">
+              Download MP4
+            </a>
+            <a id="open-link" class="button secondary" href="#" target="_blank" rel="noreferrer">
+              Open Video
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="meta-grid" aria-label="Movie details">
+        <article class="meta-card">
+          <span>Movie</span>
+          <strong id="meta-movie">Cinderella</strong>
+        </article>
+        <article class="meta-card">
+          <span>Year</span>
+          <strong id="meta-year">1950</strong>
+        </article>
+        <article class="meta-card">
+          <span>Studio</span>
+          <strong id="meta-studio">Walt Disney Productions</strong>
+        </article>
+        <article class="meta-card">
+          <span>Category</span>
+          <strong id="meta-category">Animated Feature</strong>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
